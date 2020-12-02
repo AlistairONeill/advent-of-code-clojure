@@ -1,7 +1,5 @@
 (ns advent-of-code-clojure.core
-  (:gen-class))
+  (:require [clojure.java.io :as io]))
 
-(defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
-  (println "Hello, World!"))
+(defn lines [fName]
+  (line-seq (io/reader (str "resources/" fName))))
