@@ -1,7 +1,5 @@
 (ns advent-of-code-clojure.core)
 
-(def countif (comp count filter))
-
 (defn schema1
   [num0 num1 char]
   (fn [password]
