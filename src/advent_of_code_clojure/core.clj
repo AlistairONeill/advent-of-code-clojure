@@ -9,3 +9,7 @@
 
 (defn lines [fName]
   (line-seq (io/reader (str "resources/" fName))))
+
+(defn parse-long
+  [n]
+  (Long/parseLong n))
